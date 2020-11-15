@@ -46,7 +46,7 @@ def main(vkToken, myId, triggerWord):
                 for h in toDelete[::-1]:
                     if not h == event.message_id:
                         try:
-                            vk.messages.edit(peer_id=event.peer_id, message_id=h, message='а ты не видишь, что было тут')
+                            vk.messages.edit(peer_id=event.peer_id, message_id=h, message='&#8300;')
                         except vk_api.exceptions.Captcha:
                             break
                         except vk_api.exceptions.ApiError:
